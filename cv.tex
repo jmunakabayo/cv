@@ -42,18 +42,20 @@
 %----------------------------------------------------------------------------------------
 
 \firstname{Afshin} % Your first name
-\familyname{Rahimi} % Your last name
+\familyname{Rahimi \tiny{\url{afshinrahimi.github.io}}} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
-\address{887 Swanston st.}{Parkville, Victoria 3052, Australia}
+\address{887 Swanston st.}{Parkville, Victoria 3052, Australia, Permanent Resident}
 \mobile{(61) 469 802503}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
 \email{afshinrahimi@gmail.com}
 \homepage{afshinrahimi.github.io}{afshinrahimi.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{PhD Candidate, University of Melbourne}
-\extrainfo{Citizenship:Iran Residence(Permanent):Australia}
+%\extrainfo{PhD Candidate, University of Melbourne}
+\extrainfo{Permanent Residence:Australia}
+\extrainfo{\href{https://scholar.google.com.au/citations?user=WhPw2I0AAAAJ&hl=en}{Google Scholar}}
+%\extrainfo{\href{https://au.linkedin.com/in/afshin-rahimi-879203a2}{LinkedIn}}
 \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -96,20 +98,21 @@
 %----------------------------------------------------------------------------------------
 \section{Research Interests}
 \cventry{}{}{}{}{}{My research interests fall within the fields of Natural Language Processing, Social Network Analysis and Machine Learning.
-I am specifically interested in exploiting both structured and unstructured data to get insights about people and their interests. 
+I'm particularly interested in using large amounts of structured and unstructured language data to help machines understand natural language.
 My PhD research was focused on combining text and network information in a semi-supervised setting to learn user demographics and 
 specifically Twitter user geolocation which resulted in state-of-the-art geolocation performance published in ACL, NAACL and EMNLP.}
 \section{Education}
 
 \cventry{2014--2017}{PhD in Computer Science (Expected Dec 2017)}{The University of Melbourne}{Melbourne, Australia}{}{Thesis: Geolocation of Social Media Users Exploiting Both Text and Network Information.}  % Arguments not required can be left empty
-\cventry{2010--2013}{MSc. Computational Linguistics}{Sharif University of Technology}{Tehran, Iran}{}{Thesis: Information Theoretic Analysis of Phonetic Sequences, The Case of Sonority.}
+\cventry{2010--2013}{MSc. Computational Linguistics}{Sharif University of Technology}{Tehran, Iran}{}{}
 \cventry{2002--2006}{BSc. Computer Science}{Sharif University of Technology}{Tehran, Iran}{}{}
 
 
 % Publications from a BibTeX file using the multibib package
-\section{Publications}
+%\section{Publications}
 \nocite{*}
-\bibliographystyle{plainyr}
+%\bibliographystyle{plainyr}
+\bibliographystyle{emnlp_natbib}
 \bibliography{publications.bib}
 
 
@@ -119,12 +122,12 @@ specifically Twitter user geolocation which resulted in state-of-the-art geoloca
 
 \section{Work Experience}
 
-\cventry{2016--2017}{Internship (4months)}{\textsc{Telstra TELCO}}{Melbourne, Australia}{}{
+\cventry{2016--2017}{Internship (5 months)}{\textsc{Telstra TELCO}}{Melbourne, Australia}{}{
 My internship was on customer intent prediction in interactive voice response (IVR) systems based on 
 historical events (website visits, previous calls). My work involved working with technologies like GreenPlum and Theano to create learning models that can predict the intent of a customer 
 (e.g. talking about billing, a problem with their Smart TV service or a failing modem) 
-from their previous events (e.g. page visit, previous calls, previous bill) which improved routing of customers to agents
-resulting customer satisfaction and cost reduction. 
+from their previous events (e.g. page visit, previous calls, previous bill) using classification, language modelling and association rules which improved routing of customers to agents
+resulting in customer satisfaction and cost reduction.
 The CTO of the company mentioned the results of my work in a general meeting and supported the investment of the company in the same line of work to improve customer experience.
 }
 
@@ -132,17 +135,17 @@ The CTO of the company mentioned the results of my work in a general meeting and
 %------------------------------------------------
 
 \cventry{2013--2014}{Researcher}{\textsc{Linneaus University}}{Stockholm, Sweden}{}{
-I was responsible for Text Analytics components of a projects which focused on study of stance/sentiment in 
-big data real-time text streams like Twitter. My job involved Information Retrieval, 
-working on Vector Space Models, Feature Extraction and Classification/Clustering of Stance/Sentiment in real time big data streams.
+I was a member of Sentiment Analysis team which focused on the study of stance/sentiment in 
+big data real-time text streams like Twitter. My job involved working on Vector Space Models, 
+Feature Extraction and Classification/Clustering of Stance/Sentiment in real time big data streams.
 }
 
 \cventry{2011--2013}{Java/MapReduce Developer}{\textsc{MITRC}}{Tehran, Iran}{}{
 I was responsible for a team of 4 developers working on the crawler component of a large scale web search engine. 
 I could improve the crawler's performance from just 1 million fetched URLs to 1 billion at the end. 
 The crawler had about 2 billion URLs where 1 billion ones were fetched and updated regularly. 
-The data was about 30 TB. We used Hadoop's hdfs, mapreduce and HBase. 
-We built our web crawler on top of Apache Nutch an open source popular web crawler.
+The data was about 30 TB. We used Hadoop's HDFS, MapReduce and HBase. 
+We built our web crawler on top of Apache Nutch, an open source popular web crawler.
 }
 \cventry{2006--2011}{Software Developer and System Administrator}{\textsc{KECO}}{Tehran, Iran}{}{
 Main responsibilities include: Software Development (Web and Desktop) using .NET (C\# and ASP) and 
@@ -174,7 +177,7 @@ I learned to work with technology under heavy pressure where a medium sized comp
 
 \cvitem{NLP}{Familiar with Core NLP tasks in Statistical NLP (e.g. tagging, Parsing, ASR, LM, MT)}
 \cvitem{Machine Learning}{Familiar with optimization concepts, supervised (classification), unsupervised (e.g. autoencoders, dimensionality reduction, embeddings, clustering) and (graph-based) semi-supervised models.
-Hands-on experience with Scikit-Learn, Tensorflow and Theano. Experience with neural network models such as MLP, Convolutional, Seq2Seq and Mixture Density Networks (MDN)}
+Hands-on experience with Scikit-Learn, Tensorflow and Theano. Experience with neural network models such as MLP, Convolutional, Seq2Seq, RBF and Mixture Density Networks (MDN)}
 \cvitem{SNA}{Experienced in data collection (e.g. from Twitter), data curation to create datasets, graph construction, label propagation and random walks in the graph (e.g. LP, Modified Adsorption) and
 using both node features and network structure for inductive/transductive learning (e.g. using Graph Convolutional Network)}
 \cvitem{Collaboration}{Git, SVN, JIRA, GreenHopper}
@@ -204,7 +207,7 @@ using both node features and network structure for inductive/transductive learni
 \section{References}
 \cvitem{Tim Baldwin tb@ldwin.net}{My PhD supervisor at The University of Melbourne.}
 \cvitem{Trevor Cohn t.cohn@unimelb.edu.au}{My PhD supervisor at The University of Melbourne.}
-\cvitem{Bahram Vazirnezhad bahram@sharif.edu}{My MSc. supervisor at Sharif University of Technology.}
+%\cvitem{Bahram Vazirnezhad bahram@sharif.edu}{My MSc. supervisor at Sharif University of Technology.}
 
 %----------------------------------------------------------------------------------------
 
